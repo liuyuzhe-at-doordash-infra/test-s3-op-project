@@ -1,0 +1,2 @@
+This is a testing object in the s3 bucket created via tf but imported into pulumi and now managed by pulumi.
+Also this file is used to test pulumi k8s operator managing imported pulumi stack.
