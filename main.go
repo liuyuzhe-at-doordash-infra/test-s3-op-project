@@ -22,7 +22,10 @@ func main() {
 			Versioning: &s3.BucketVersioningArgs{
 				Enabled: pulumi.Bool(true),
 			},
-		}, pulumi.Protect(true))
+		}, pulumi.Import(pulumi.ID("my-test-s3bucket-20220912222806820000000001")),
+		)
+		//pulumi.Protect(true))
+
 		if err != nil {
 			return err
 		}
